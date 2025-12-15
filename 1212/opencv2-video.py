@@ -46,6 +46,8 @@ if cap.isOpened():
 
         cv2.imshow('dog video', frame) # 사진에서 img와 동일 
 
+        # waitKey의 숫자에 따라 영상 길이 조절 가능
+        # cv2.CAP_PROP_FPS 가 인자로 들어가면 원본 영상의 속도
         if cv2.waitKey(25)& 0xFF == ord('q'): # 정상 속도(25) / q를 누르면 영상 종료
             # 25대신 cv2.CAP_PROP_FPS 가능. 근데 왜 배속으로 나오지??
             break

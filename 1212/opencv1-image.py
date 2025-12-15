@@ -1,4 +1,8 @@
 import cv2
+'''
+pip install opencv-python 설치
+가상 뭐시기 만든거 활성화가... 어떻게 하더라...
+'''
 
 # 이미지 불러 창 띄우기
 # https://pixabay.com/ko/ <- 무료 이미지, 영상

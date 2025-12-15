@@ -6,8 +6,8 @@ if cap.isOpened():
         ret, img = cap.read()
         if ret:
             cv.imshow('camera', img)
-            if cv.waitKey(10) != -1:
-                cv.imwrite('output/camera-capture.jpg')
+            if cv.waitKey(10) != -1:                     # 10ms동안 키 입력 대기
+                cv.imwrite('output/camera-capture.jpg')  # 사진을 저장
                 break
 cap.release()
 cv.destroyAllWindows()
