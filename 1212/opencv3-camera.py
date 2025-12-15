@@ -1,6 +1,6 @@
 import cv2 as cv
 
-cap = cv.VideoCapture(0) # 경로명이 아닌 기기 id
+cap = cv.VideoCapture(0) # 경로명이 아닌 기기 id (노트북 카메라 캠)
 if cap.isOpened():
     while True:
         ret, img = cap.read()
